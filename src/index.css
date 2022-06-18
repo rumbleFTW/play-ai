@@ -1,4 +1,15 @@
 html, body, .Login-component
 {
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.baap
+{
+    padding: 2%;
+    height: 75vh;
+    width: 75vw;
+    background-color: #39af30;
 }
