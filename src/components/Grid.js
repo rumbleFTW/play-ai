@@ -52,9 +52,9 @@ export default function Grid()
 
 
     return (
-        <div className="grid--container">
+        <div className="gridContainer">
             {matrix.map((prop) => (
-                <div className="grid--pixel" row={prop.row} col={prop.col} active={prop.active} key={prop.key}   draggable="false" onMouseOver={() =>{if(click){matrix[prop.key].active = 1;setLength(length+1);console.log('Drag enter')}}} onMouseDown={() =>{setClick(true)}} onMouseUp={() =>{setClick(false); predict()}}></div>
+                <div className="gridPixel" row={prop.row} col={prop.col} active={prop.active} key={prop.key}   draggable="false" onMouseOver={() =>{if(click){matrix[prop.key].active = 1;setLength(length+1);console.log('Drag enter')}}} onMouseDown={() =>{setClick(true)}} onMouseUp={() =>{setClick(false); predict()}}></div>
             ))}
         </div>
     );
